@@ -1,7 +1,7 @@
 var topbarBegin = '<div id="topBar"></div>'
 var topbarList = new Array()
 topbarList.push(["<b>FE Wiki</b>","/"])
-topbarList.push(["Rarities","/rarities"])
+topbarList.push(["Rolling","/rolling"])
 topbarList.push(["Dimensions","/dimensions"])
 topbarList.push(["<font color='#aaffaa'>Play FE</font>","https://www.roblox.com/games/15296932900"])
 
