@@ -62,8 +62,8 @@ fetch("https://api.github.com/repos/fe-wiki/fe-wiki.github.io/git/trees/main?rec
              continue
           }
           var lowerPath = "/" + value["path"].toLowerCase()
-          if lowerPath.includes(lowerSearch) {
-              document.getElementById("searchResults").innerHTML += `<a href="${lowerPath}">${lowerPath}</a>`
+          if (lowerPath.includes(lowerSearch)) {
+              document.getElementById("searchResults").innerHTML += `<br><a href="${lowerPath}">${lowerPath}</a>`
           }
        }
    })
