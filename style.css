@@ -21,6 +21,11 @@ body {
 
 }
 
+button {
+  color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
+}
+
 
 a:hover {
   color: #77bbff;
