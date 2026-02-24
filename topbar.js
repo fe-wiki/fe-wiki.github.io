@@ -6,7 +6,10 @@ topbarList.push(["Dimensions","/dimensions"])
 topbarList.push(["<font color='#aaffaa'>Play FE</font>","https://www.roblox.com/games/15296932900"])
 
 window.addEventListener("load", function() {
-  
+
+   if (window.location.pathname.replace(/\/$/, "").split("/").length > 1) {
+      document.body.innerHTML = `<a href="${window.location.pathname.replace(/\/$/, "").split("/").pop().join("/")}">« Return</a>`+ document.body.innerHTML
+    }
   document.body.innerHTML = topbarBegin + document.body.innerHTML
   for (var index = 0; index < topbarList.length; index++) {
     var value = topbarList[index]
