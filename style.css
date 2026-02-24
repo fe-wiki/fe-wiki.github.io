@@ -2,3 +2,15 @@
   width: 100%;
   padding: 4px;
 }
+
+a {
+  color: #0000bb;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+
+a:hover {
+  color: #0077bb;
+  text-decoration: underline; /* Adds an underline on hover */
+}
