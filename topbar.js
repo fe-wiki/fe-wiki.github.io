@@ -3,7 +3,7 @@ var topbarList = new Array()
 topbarList.push(["<b>FE Wiki</b>","/"])
 topbarList.push(["Rarities","/rarities"])
 topbarList.push(["Dimensions","/dimensions"])
-topbarList.push(["<font color='#00aa00'>Play FE</font>","https://www.roblox.com/games/15296932900"])
+topbarList.push(["<font color='#aaffaa'>Play FE</font>","https://www.roblox.com/games/15296932900"])
 
 window.addEventListener("load", function() {
   
@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
     var value = topbarList[index]
     var extra = ""
     if (window.location.pathname.replace(/\/$/, "") == value[1].replace(/\/$/, "")) {
-      extra = "color:#000000;text-decoration: underline;"
+      extra = "color:#ffffff;text-decoration: underline;"
     }
     document.getElementById("topBar").innerHTML += `<a style="${extra}" href="${value[1]}">${value[0]}</a> `
   }
