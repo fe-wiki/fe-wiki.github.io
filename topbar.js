@@ -1,8 +1,8 @@
 var topbarBegin = '<div id="topBar"></div>'
 var topbarList = new Array()
 topbarList.push(["<b>FE Wiki</b>","/"])
-topbarList.push(["About","/about"])
 topbarList.push(["Rarities","/rarities"])
+topbarList.push(["Dimensions","/dimensions"])
 
 window.addEventListener("load", function() {
   
