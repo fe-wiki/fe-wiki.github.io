@@ -7,7 +7,7 @@ topbarList.push(["<font color='#aaffaa'>Play FE</font>","https://www.roblox.com/
 
 window.addEventListener("load", function() {
 
-   if (window.location.pathname.replace(/\/$/, "").split("/").length > 1) {
+   if (window.location.pathname.replace(/\/$/, "").split("/").length > 2) {
       var arr = window.location.pathname.replace(/\/$/, "").split("/")
       arr.pop()
       var txtarr = arr.join("/")
