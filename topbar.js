@@ -53,7 +53,7 @@ fetch("https://api.github.com/repos/fe-wiki/fe-wiki.github.io/git/trees/main?rec
         document.getElementById("go").style.position = "fixed"
       document.getElementById("bg2").style.display = "fixed"
 
-       var lowerSearch = document.getElementById("search").text.toLowerCase()
+       var lowerSearch = document.getElementById("search").value.toLowerCase()
        document.getElementById("searchResults").innerHTML = `Searching for "${lowerSearch}"`
 
        for (var index = 0; index < Object.keys(tree).length; index++) {
