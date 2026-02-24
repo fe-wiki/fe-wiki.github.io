@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 #topBar {
   width: 100%;
   padding: 4px;
@@ -7,6 +9,17 @@ a {
   color: #0000bb;
   text-decoration: none;
   transition: color 0.5s ease;
+}
+
+body {
+   margin: auto;
+  padding: 10px;
+  margin-top: 24px;
+  line-height: 1.5;
+  background-color: #000000;
+  text-color: #ffffff;
+   font-family: "Noto Sans", sans-serif;
+
 }
 
 
