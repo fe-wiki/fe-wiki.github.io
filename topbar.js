@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
     var value = topbarList[index]
     var extra = ""
     if (window.location.pathname == value[1]) {
-      extra = "color:#6666ff"
+      extra = "color:#000000;"
     }
     document.getElementById("topBar").innerHTML += `<a style="${extra}" href="${value[1]}">${value[0]}</a> `
   }
