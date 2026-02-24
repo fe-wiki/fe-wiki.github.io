@@ -3,6 +3,7 @@ var topbarList = new Array()
 topbarList.push(["<b>Home</b>","/"])
 
 window.addEventListener("load", function() {
+  document.innerHTML = topbarBegin + document.innerHTML
   for (var index = 0; index < topbarList.length; index++) {
     var value = topbarList[index]
     document.getElementById("topBar").innerHTML += `<a href="${value[1]}">${value[2]}</a>`
