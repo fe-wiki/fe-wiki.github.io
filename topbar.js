@@ -51,7 +51,7 @@ fetch("https://api.github.com/repos/fe-wiki/fe-wiki.github.io/git/trees/main?rec
        document.getElementById("bg1").style.display = "block"
       document.getElementById("bg2").style.display = "block"
         document.getElementById("go").style.position = "fixed"
-      document.getElementById("search").style.display = "fixed"
+      document.getElementById("search").style.position = "fixed"
 
        var lowerSearch = document.getElementById("search").value.toLowerCase()
        document.getElementById("searchResults").innerHTML = `Searching for "${lowerSearch}"`
@@ -72,7 +72,7 @@ fetch("https://api.github.com/repos/fe-wiki/fe-wiki.github.io/git/trees/main?rec
        document.getElementById("bg1").style.display = "none"
       document.getElementById("bg2").style.display = "none"
         document.getElementById("go").style.position = "absolute"
-      document.getElementById("search").style.display = "absolute"
+      document.getElementById("search").style.position = "absolute"
    })
 })
 
