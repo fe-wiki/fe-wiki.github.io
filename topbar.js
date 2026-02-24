@@ -13,6 +13,7 @@ window.addEventListener("load", function() {
    document.body.innerHTML += `<button style="display:none;position:fixed;width:100%;height:100%;top:0px;right:0px;border:none;outline:none;background-color:#00000077;" id="bg1"></button>
    <div style="display:none;padding:12px;position:fixed;width:50%;height:100%;top:0px;right:0px;border:none;outline:none;background-color:#000000;" id="bg2">
     <button id="cancelGo" style="border:none;outline:none;background-color:#444444;border-radius:8px;color:#ffaaaa">Exit</button>
+    <p id="searchResults"></p>
    </div>
    <input id="search" placeholder="Search" type="string" style="border:none;outline:none;border-radius:8px;height:20px;background-color:#444444;color:#ffffff;position:absolute;right:46px;top:12px;font-family:'Noto Sans';max-width:50%;padding-left:4px;"><button id="go" style="border:none;outline:none;border-radius:8px;height:20px;width:30px;background-color:#444444;color:#ffffff;position:absolute;right:12px;top:12px;font-family:'Noto Sans';max-width:50%">Go</button>`
 
@@ -37,11 +38,34 @@ window.addEventListener("load", function() {
   }
    document.body.innerHTML += `<br><small>If you'd like to add pages or make changes the wiki, go to <a href="https://github.com/fe-wiki/fe-wiki.github.io">the github repository page</a> and start contributing.</small>`
 
+   
+
+   var tree = new Object()
+fetch("https://api.github.com/repos/fe-wiki/fe-wiki.github.io/git/trees/main?recursive=1")
+   .then(response => response.json())
+   .then(data => {
+      tree = data['tree']
+   })
+
     document.getElementById("go").addEventListener("click", function() {
        document.getElementById("bg1").style.display = "block"
       document.getElementById("bg2").style.display = "block"
         document.getElementById("go").style.position = "fixed"
       document.getElementById("bg2").style.display = "fixed"
+
+       var lowerSearch = document.getElementById("search").text.toLowerCase()
+       document.getElementById("searchResults").innerHTML = `Searching for "${lowerSearch}"`
+
+       for (var index = 0; index < Object.keys(tree).length; index++) {
+          var value = tree[Object.keys(tree)[index]]
+          if (value["type"] == "blob") {
+             continue
+          }
+          var lowerPath = "/" + value["path"].toLowerCase()
+          if lowerPath.includes(lowerSearch) {
+              document.getElementById("searchResults").innerHTML += `<a href="${lowerPath}">${lowerPath}</a>`
+          }
+       }
    })
 
     document.getElementById("cancelGo").addEventListener("click", function() {
