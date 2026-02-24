@@ -3,6 +3,7 @@ var topbarList = new Array()
 topbarList.push(["<b>FE Wiki</b>","/"])
 topbarList.push(["Rarities","/rarities"])
 topbarList.push(["Dimensions","/dimensions"])
+topbarList.push(["<font color='#00aa00'>Play FE</font>","https://www.roblox.com/games/15296932900"])
 
 window.addEventListener("load", function() {
   
