@@ -15,19 +15,6 @@ window.addEventListener("load", function() {
     <button id="cancelGo" style="border:none;outline:none;background-color:#444444;border-radius:8px;color:#ffaaaa">Exit</button>
    </div>
    <input id="search" placeholder="Search" type="string" style="border:none;outline:none;border-radius:8px;height:20px;background-color:#444444;color:#ffffff;position:absolute;right:46px;top:12px;font-family:'Noto Sans';max-width:50%;padding-left:4px;"><button id="go" style="border:none;outline:none;border-radius:8px;height:20px;width:30px;background-color:#444444;color:#ffffff;position:absolute;right:12px;top:12px;font-family:'Noto Sans';max-width:50%">Go</button>`
-   document.getElementById("go").addEventListener("click", function() {
-       document.getElementById("bg1").style.display = "block"
-      document.getElementById("bg2").style.display = "block"
-        document.getElementById("go").style.position = "fixed"
-      document.getElementById("bg2").style.display = "fixed"
-   })
-
-    document.getElementById("cancelGo").addEventListener("click", function() {
-       document.getElementById("bg1").style.display = "none"
-      document.getElementById("bg2").style.display = "none"
-        document.getElementById("go").style.position = "absolute"
-      document.getElementById("bg2").style.display = "absolute"
-   })
 
    if (window.location.pathname.replace(/\/$/, "").split("/").length > 2) {
       var arr = window.location.pathname.replace(/\/$/, "").split("/")
@@ -49,5 +36,19 @@ window.addEventListener("load", function() {
     document.getElementById("topBar").innerHTML += `${emd}<a style="${extra}" href="${value[1]}">${value[0]}</a> `
   }
    document.body.innerHTML += `<br><small>If you'd like to add pages or make changes the wiki, go to <a href="https://github.com/fe-wiki/fe-wiki.github.io">the github repository page</a> and start contributing.</small>`
+
+    document.getElementById("go").addEventListener("click", function() {
+       document.getElementById("bg1").style.display = "block"
+      document.getElementById("bg2").style.display = "block"
+        document.getElementById("go").style.position = "fixed"
+      document.getElementById("bg2").style.display = "fixed"
+   })
+
+    document.getElementById("cancelGo").addEventListener("click", function() {
+       document.getElementById("bg1").style.display = "none"
+      document.getElementById("bg2").style.display = "none"
+        document.getElementById("go").style.position = "absolute"
+      document.getElementById("bg2").style.display = "absolute"
+   })
 })
 
