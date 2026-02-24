@@ -3,7 +3,8 @@
 
 To add a page, create a folder with the wanted name for the page inside the root or inside another folder for a subpage. Create a file named index.html for your page and copy this as a template:
 
-```<head>
+```html
+<head>
   <title>Unoffical FE Wiki</title>
   <script src='/topbar.js'></script>
   <link rel="stylesheet" href="/style.css">
