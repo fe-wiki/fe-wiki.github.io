@@ -28,3 +28,7 @@ To add a page, create a folder with the wanted name for the page inside the root
 - Do not share explicit content.
 - Do not link to external websites.
 - Stay on topic.
+- Do not create harmful scripts.
+
+### About non html files
+- If you don't know what you're doing, **don't mess with it!**
