@@ -6,7 +6,7 @@
 }
 
 a {
-  color: #0000bb;
+  color: #bbbbff;
   text-decoration: none;
   transition: color 0.5s ease;
 }
@@ -14,6 +14,8 @@ a {
 body {
    margin: auto;
   padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
   line-height: 1;
    font-family: "Noto Sans", sans-serif;
 
@@ -21,6 +23,6 @@ body {
 
 
 a:hover {
-  color: #0077bb;
+  color: #77bbff;
   text-decoration: underline; /* Adds an underline on hover */
 }
