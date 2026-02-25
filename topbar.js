@@ -39,7 +39,7 @@ window.addEventListener("load", function() {
     document.getElementById("topBar").innerHTML += `${emd}<a style="${extra}" href="${value[1]}">${value[0]}</a> `
   }
    if (window.location.pathname != "/") {
-      document.body.innerHTML += `<br><small><a href="https://github.com/fe-wiki/fe-wiki.github.io/edit/main${window.location.pathname}index.html">Edit Page</a></small>`
+      document.body.innerHTML += `<br><small><a href="https://github.com/fe-wiki/fe-wiki.github.io/edit/main${window.location.pathname}index.html">Edit Page</a> • <a href="/editing-info">How to Edit</a></small>`
    }
 
    
