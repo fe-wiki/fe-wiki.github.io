@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
 
    document.title = "Unoffical FE Wiki"
 
-   document.body.innerHTML += `<button style="display:none;position:fixed;width:50%;max-width:300px;height:100%;top:0px;right:0px;border:none;outline:none;background-color:#00000077; transition: background-color 0.3s ease;" id="bg1"></button>
+   document.body.innerHTML += `<button style="display:none;position:fixed;width:50%;max-width:300px;height:100%;top:0px;right:0px;border:none;outline:none;background-color:#00000000; transition: background-color 0.3s ease;" id="bg1"></button>
    <div style="padding:12px;position:fixed;width:50%;height:100%;max-width:300px;top:0px;right:0px;border:none;outline:none;background-color:#000000;overflow-y:scroll; translate: 100%; transition: translate 0.3s ease;" id="bg2">
     <button id="cancelGo" style="border:none;outline:none;background-color:#444444;border-radius:8px;color:#ffaaaa">Exit</button>
     <p id="searchResults"></p>
@@ -53,7 +53,6 @@ fetch("https://api.github.com/repos/fe-wiki/fe-wiki.github.io/git/trees/main?rec
 
     document.getElementById("go").addEventListener("click", function() {
        document.getElementById("bg1").style.display = "block"
-       document.getElementById("bg1").style["background-color"] = "#00000077"
       document.getElementById("bg2").style.translate = "0%"
         document.getElementById("go").style.position = "fixed"
       document.getElementById("search").style.position = "fixed"
@@ -77,7 +76,6 @@ fetch("https://api.github.com/repos/fe-wiki/fe-wiki.github.io/git/trees/main?rec
        setTimeout(() => {
         document.getElementById("bg1").style.display = "none"
       }, 300);
-       document.getElementById("bg1").style["background-color"] = "#00000000"
      document.getElementById("bg2").style.translate = "100%"
         document.getElementById("go").style.position = "absolute"
       document.getElementById("search").style.position = "absolute"
