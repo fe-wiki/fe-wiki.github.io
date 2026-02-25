@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
    document.title = "Unoffical FE Wiki"
 
    document.body.innerHTML += `<button style="display:none;position:fixed;width:50%;max-width:300px;height:100%;top:0px;right:0px;border:none;outline:none;background-color:#00000000; transition: background-color 0.3s ease;" id="bg1"></button>
-   <div style="padding:12px;position:fixed;width:50%;height:100%;max-width:300px;top:0px;right:0px;border:none;outline:none;background-color:#000000;overflow-y:scroll; translate: 100%; transition: translate 0.3s ease;" id="bg2">
+   <div style="padding:12px;position:fixed;width:50%;height:100%;max-width:300px;top:0px;right:0px;border:none;outline:none;background-color:#000000;overflow-y:auto; translate: 100%; transition: translate 0.3s ease;" id="bg2">
     <button id="cancelGo" style="border:none;outline:none;background-color:#444444;border-radius:8px;color:#ffaaaa">Exit</button>
     <p id="searchResults"></p>
    </div>
