@@ -45,7 +45,7 @@ window.addEventListener("load", function() {
    
 
    var tree = new Object()
-fetch("https://api.github.com/repos/fe-wiki/fe-wiki.github.io/git/trees/main?recursive=1")
+fetch(`https://api.github.com/repos/${window.location.hostname.split(".")[0]}/${window.location.hostname}/git/trees/main?recursive=1`)
    .then(response => response.json())
    .then(data => {
       tree = data['tree']
