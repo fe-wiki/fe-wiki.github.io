@@ -35,3 +35,9 @@ a:hover {
 td {
   padding-right: 10px; /* Space between cells */
 }
+
+.unobtainable {
+  background: -webkit-linear-gradient(#03fffd, #f4ff85);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
