@@ -37,7 +37,31 @@ td {
 }
 
 .unobtainable {
+  background: -webkit-linear-gradient(#03fffd, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.event {
   background: -webkit-linear-gradient(#03fffd, #f4ff85);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.supersecret {
+  background: -webkit-linear-gradient(#ffffff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secret {
+  background: -webkit-linear-gradient(#ff0000, #990000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.halfsecret {
+  background: -webkit-linear-gradient(#00ff00, #00aa44);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
