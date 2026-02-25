@@ -31,3 +31,7 @@ a:hover {
   color: #77bbff;
   text-decoration: underline; /* Adds an underline on hover */
 }
+
+td {
+  margin: 4px; /* Space between cells */
+}
