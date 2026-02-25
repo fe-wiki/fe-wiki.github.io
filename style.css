@@ -33,5 +33,5 @@ a:hover {
 }
 
 td {
-  margin: 4px; /* Space between cells */
+  padding-right: 10px; /* Space between cells */
 }
