@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
       var arr = window.location.pathname.replace(/\/$/, "").split("/")
       arr.pop()
       var txtarr = arr.join("/")
-      document.body.innerHTML = `<a href="${txtarr}">« ${txtarr}</a>`+ document.body.innerHTML
+      document.body.innerHTML = `<div style="margin:8px;margin-top:10px;margin-bottom:-10px;"><a href="${txtarr}">« ${txtarr}</a></div>`+ document.body.innerHTML
     }
   document.body.innerHTML = topbarBegin + document.body.innerHTML
   for (var index = 0; index < topbarList.length; index++) {
