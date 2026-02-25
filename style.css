@@ -43,6 +43,12 @@ td {
 }
 
 .event {
+  background: -webkit-linear-gradient(#03fffd, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exclusive {
   background: -webkit-linear-gradient(#03fffd, #f4ff85);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
