@@ -71,3 +71,86 @@ td {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.unusual {
+  background: -webkit-linear-gradient(#44ff00, #ffaa00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.redenvelope {
+   background: -webkit-linear-gradient(#ff0000, #ffaaaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.requiem {
+  background: -webkit-linear-gradient(#ffff00, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.curses {
+  background: -webkit-linear-gradient(#bb0000, #660000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.alpha {
+  background: -webkit-linear-gradient(#777777,#555555);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: 2px #bbbbbb;
+}
+
+.reaper {
+  background: -webkit-linear-gradient(#666666, #444444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.anas-blessing {
+  background: -webkit-linear-gradient(#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.insight {
+  background: -webkit-linear-gradient(#aaffff, #ddffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luck {
+  background: -webkit-linear-gradient(#55ff55, #ccffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.magical {
+  background: -webkit-linear-gradient(#ffffaa, #ffffdd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.speed {
+  background: -webkit-linear-gradient(#55ffaa, #ccffee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clover {
+  background: -webkit-linear-gradient(#ffaaff, #ffddff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dupe {
+  background: -webkit-linear-gradient(#777777, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.transmunity {
+  background: -webkit-linear-gradient(#aa33ff, #33aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
