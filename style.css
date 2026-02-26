@@ -154,3 +154,15 @@ td {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.d1 {
+  background: -webkit-linear-gradient(#aa0000, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.d2 {
+  background: -webkit-linear-gradient(#003377, #660077);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
